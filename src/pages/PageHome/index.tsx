@@ -97,17 +97,25 @@ function index() {
     <Box>
       <Box
         display={"flex"}
-        flexDirection={"row"}
+        flex={1}
+        flexDirection={"column"}
         justifyContent={"center"}
+        alignItems={"center"}
         p={2}
       >
-        <Typography
-          // component={"body"}
-          variant="h4"
-          fontWeight={"700"}
-        >
-          Thông tin COVID 19
-        </Typography>
+        <Box
+          display={"flex"}
+          alignItems={"flex-end"}
+          flexDirection={"column"}>
+          <Typography
+            // component={"body"}
+            variant="h4"
+            fontWeight={"700"}
+          >
+            Thông tin COVID 19
+          </Typography>
+          <span > by Quang Royal</span>
+        </Box>
       </Box>
       <Box>
         <ButtonGroup variant="outlined" aria-label="outlined button group">
